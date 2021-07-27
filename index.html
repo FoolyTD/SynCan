@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bambi's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div>
+            <nav class="navbar">
+                <div class="nav-title">
+                    <h1>SynCan</h1>
+                </div>
+                <div class="nav-links">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="tagline">
+            <h3>Using synthetic biology to sustainably synthesize cannabinoids.
+            </h3>
+        </div>
+        <div class="images-list">
+            <div class="image-list-item">
+                <img onclick="toggleText1()"   src="images/87c03d4f43f1f31763a4173b34e0ee276e0514a6-780x404.png">
+            <p class="layer">Click for more information</p>
+            </img>
+                <p id="text1">Traditional cannabis cultivation yields the need to use large amounts of water, electricity, fertilizers, and pesticides. If the cannabis industry were to remain small-scale, perhaps the environmental burden would not be so great. However, with the dawn of legalization in many countries like Mexico and the USA, the cannabis market is poised to grow substantially. Therefore, there is a large opportunity to create a sustainable alternative to traditional cannabis cultivation. Using synthetic biology to engineer an organism that can produce cannabinoids, initially CBD, is the solution SynCan believes will lead to a sustainable cannabis market.</p>
+            </div>
+            <div class="image-list-item">
+                <img src="images/197943_web-1068x668.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quam?</p>
+            </div>
+            <div class="image-list-item">
+                <img src="images/117451606.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quam?</p>
+            </div>
+        </div>
+        
+        <script>
+            
+        const text1 = document.getElementById("text1");
+
+function toggleText1() {
+    if (text1.style.fontSize === "0px") {
+        text1.style.fontSize = "15px";
+    } else {
+        text1.style.fontSize = "0px";
+    }
+}
+function hideMenu() {
+    navLinks.style.right = "500px";
+
+}
+        </script>
+    </body>
+</html>
