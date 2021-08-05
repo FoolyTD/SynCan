@@ -1,30 +1,152 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bambi's Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    </head>
-    <body>
-        <div>
-            <nav class="navbar">
-                <div class="nav-title">
-                    <h1>SynCan</h1>
-                </div>
-                <div class="nav-links">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-envelope"></i>
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bambi's Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <nav class="navbar-container">
+        <h1 onclick="changeNavbar() " class="nav-title">SynCan</h1>
+        <ul class="nav-links">
+          <li class="nav-link-item">
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-link-item">
+            <a href=""><i class="fa fa-envelope"></i></a>
+          </li>
+          <li class="nav-link-item">
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <i onclick="flipMenu()" class="fa fa-bars"></i>
+        <div class="toggle-menu" id="toggle-menu">
+          <i
+            onclick="flipMenu()"
+            class="fa fa-window-close"
+            id="close-menu"
+          ></i>
+          <div>
+            <ul class="toggle-menu-group">
+              <li onclick="flipMenu()" class="toggle-group-item">
+                <a>Home</a>
+              </li>
+              <li onclick="flipMenu()" class="toggle-group-item">
+                <a>About</a>
+              </li>
+              <li onclick="flipMenu()" class="toggle-group-item">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="tagline">
+      </nav>
+    </div>
+    <!-- Header -->
+    <div class="header">
+      <header class="header-container">
+        <h3 class="header-text">
+          Using synthetic biology to sustainably synthesize cannabinoids.
+        </h3>
+      </header>
+    </div>
+    <!-- Content -->
+    <div class="content-container">
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="images/87c03d4f43f1f31763a4173b34e0ee276e0514a6-780x404.png"
+              alt="cannabis"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Cannabis</h1>
+            <p>
+              Traditional cannabis cultivation yields the need to use large
+              amounts of water, electricity, fertilizers, and pesticides. If the
+              cannabis industry were to remain small-scale, perhaps the
+              environmental burden would not be so great. However, with the dawn
+              of legalization in many countries like Mexico and the USA, the
+              cannabis market is poised to grow substantially. Therefore, there
+              is a large opportunity to create a sustainable alternative to
+              traditional cannabis cultivation. Using synthetic biology to
+              engineer an organism that can produce cannabinoids, initially CBD,
+              is the solution SynCan believes will lead to a sustainable
+              cannabis market.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="images/197943_web-1068x668.png"
+              alt="cannabis"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Synthetic Biology</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+              beatae enim! In sint recusandae ducimus nulla esse blanditiis
+              veritatis cumque architecto non voluptatibus quo magni repudiandae
+              distinctio obcaecati laboriosam, aspernatur at reprehenderit?
+              Vitae, maxime. Nemo blanditiis vero iste natus modi illo quis
+              eveniet odit tempora autem neque molestiae sapiente quibusdam,
+              suscipit et quos minima totam repellendus expedita ex eligendi
+              libero error? Rerum veritatis aut doloribus facere cum saepe nulla
+              nemo! Quisquam veniam dicta repudiandae perspiciatis accusamus?
+              Provident excepturi commodi nisi?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="images/117451606.png"
+              alt="cannabis"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Synthetic Biology</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              atque eligendi ut quis. Quod corrupti nobis labore, illum sapiente
+              repellat porro fuga nemo odio quidem aut, doloremque facere
+              dignissimos hic aliquid at. Veniam officiis quam tempora ut
+              aliquam quas quidem repudiandae deleniti numquam, ad esse a
+              necessitatibus nemo omnis quo. Nesciunt suscipit, repudiandae
+              mollitia culpa dolores minus laborum nam quas, necessitatibus
+              temporibus, dolor sapiente accusamus cumque placeat modi magni!
+              Sapiente adipisci alias molestias explicabo omnis odio eveniet
+              exercitationem incidunt. Numquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="tagline">
             <h3>Using synthetic biology to sustainably synthesize cannabinoids.
             </h3>
         </div>
@@ -60,6 +182,6 @@ function hideMenu() {
     navLinks.style.right = "500px";
 
 }
-        </script>
-    </body>
+        </script> -->
+  </body>
 </html>
