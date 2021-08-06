@@ -133,6 +133,55 @@ nav a:visited {
     .nav-links {
         display: flex;
     }
+    .flip-card {
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: none;
+        width: 66vw;
+        height: 330px;
+        /* border: 1px solid #f1f1f1; */
+        overflow: none;
+        /* margin-left: 10rem; */
+        /* padding-right: 10rem; */
+        /* margin-bottom: 1.2rem; */
+        /* perspective: 1000px; Remove this if you don't want the 3D effect */
+        border-radius: 0%;
+      }
+    .flip-card-inner {
+        display:flex;
+        justify-content: space-evenly;
+        /* position: ; */
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: none;
+        /* transform-style: preserve-3d; */
+    }
+    img {
+        border-radius: 10px;
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+      }
+      .flip-card-front, .flip-card-back {
+        position: inherit;
+        /* display:contents; */
+        display:flex;
+        width: 33vw;
+        height: 100%;
+        -webkit-backface-visibility: visible; /* Safari */
+        backface-visibility: visible;
+        /* -webkit-backface-visibility: hidden; Safari */
+        /* backface-visibility: hidden; */
+      }
+      .flip-card-back {
+        background-color: transparent;
+        display:flex;
+        flex-direction: column;
+        color: rgb(8, 4, 4);
+        font-size: 1rem;
+        transform: rotateY(0);
+      }
 }
 
 
